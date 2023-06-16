@@ -1,11 +1,11 @@
-About banana-hep
-================
+About banana-hep-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/banana-hep-feedstock/blob/main/LICENSE.txt)
 
 Home: https://banana-hep.readthedocs.io
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/banana-hep-feedstock/blob/main/LICENSE.txt)
 
 Summary: Benchmarking infrastructure for Deep Inelastic Scattering and evolution codes used in High Energy Physics.
 
