@@ -1,5 +1,5 @@
 {% set name = "banana-hep" %}
-{% set version = "0.6.12" %}
+{% set version = "0.6.15" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 0cf4a78f5affa5e1afe138ae6c9df5414deb9785901b585fcbdf6bbf531a1b9b
+  sha256: 96069215af1d56f76d80e428c679d399b30ceb357875d29b583706826e144e45
 
 build:
   noarch: python
