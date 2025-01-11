@@ -6,18 +6,18 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
   sha256: 0cf4a78f5affa5e1afe138ae6c9df5414deb9785901b585fcbdf6bbf531a1b9b
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
-    - python >=3.8,<3.12
+    - python {{ python_min }}
     - poetry-core >=1.0.0
     - poetry-dynamic-versioning
   run:
@@ -28,7 +28,7 @@ requirements:
     - numpy >=1.21.0,<2.0.0
     - pandas >=1.3.5,<2.0.0
     - pendulum >=2.1.2,<3.0.0
-    - python >=3.8,<3.12
+    - python >={{ python_min }},<3.12
     - pyyaml =6.0
     - rich >=12.4.4,<13.0.0
     - sqlalchemy >=1.4.29,<2.0.0
@@ -40,6 +40,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://banana-hep.readthedocs.io
