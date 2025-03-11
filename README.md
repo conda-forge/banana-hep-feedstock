@@ -3,7 +3,7 @@ About banana-hep-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/banana-hep-feedstock/blob/main/LICENSE.txt)
 
-Home: https://banana-hep.readthedocs.io
+Home: https://banana-hep.readthedocs.io/
 
 Package license: GPL-3.0-only
 
