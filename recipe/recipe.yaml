@@ -19,11 +19,11 @@ build:
 
 requirements:
   host:
-    - python >=3.9,<3.13
+    - python >=${{ python_min }},<3.13
     - poetry-core
     - pip
   run:
-    - python >=3.9.0,<4.0.0,<3.13
+    - python >=${{ python_min }},<3.13
     - ipython >=8.1.0,<9.0.0
     - sqlalchemy >=1.4.29,<2.0.0
     - numpy >=1.26.0,<2.0.0
