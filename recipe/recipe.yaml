@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: banana-hep
-  version: "0.6.16"
+  version: "0.6.17"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/banana_hep-${{ version }}.tar.gz
-  sha256: dc26cb644a43ba297d40d99eb321746388b91b327ebc3ed8a357a3cb669314c9
+  sha256: aabfe4f37baf40fb3ebeed85805424d6d8de446448dd0c0e75535bd8f42086ef
 
 build:
   number: 0
